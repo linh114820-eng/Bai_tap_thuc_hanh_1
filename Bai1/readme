@@ -1,0 +1,20 @@
+# bai_thuc_hanh_1_ Chuyển mã nguồn thành sơ đồ khối 
+bài tập thực hành chương 1 
+# Bài 01: 
+
+## 1. Đề bài
+Vẽ sơ đồ khối thuật toán giải phương trình ax^2 + bx + c = 0
+## 2. Phân tích bài toán 
+
+### Input : 
+-  nhập a,b ,c 
+### output:
+- kết quả giải phương trình bậc hai
+Phương trình:   ax^2+bx+c=0
+## 3. Ý tưởng thuật toán 
+Ý tưởng: nhập (a,b,c), sau đó xét trường hợp (a=0) hay (a khác 0).
+Nếu a = 0, xét pt bậc nhất bx + c = 0.
+Nếu a khác 0, tính biểu thức delta : b^2 - 4*a*c.
+                    +/ delta  = 0: ngiệm kép x = -b/ (2a)
+                    +/ delta > 0 : hai nghiệm phân biệt 
+                    +/ delta < 0: không có nghiệm 
