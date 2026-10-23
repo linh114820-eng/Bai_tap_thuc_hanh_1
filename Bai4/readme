@@ -1,1 +1,37 @@
 
+# Bài 4
+
+# Bài thực hành: Tìm BCNN trong mảng số nguyên
+
+## 1. Đề bài
+
+Vẽ sơ đồ khối giải thuật tìm bội chung nhỏ nhất
+(BCNN) trong mảng số nguyên. Đánh giá giải thuật sử dụng.
+
+## 2. Phân tích bài toán 
+
+- Input:
+  - Số lượng phần tử n.
+  - n số nguyên trong mảng A.
+- Output: BCNN của các phần tử trong mảng.
+
+Quy ước: n phải lớn hơn 0. Nếu có phần tử bằng 0,
+BCNN của mảng được quy ước bằng 0.
+
+## 3. Ý tưởng giải thuật
+- Bước 1 (Đầu vào): Nhận mảng gồm N số nguyên dương a1, a2,... , aN
+- Bước 2 (Khởi tạo): Đặt biến kết quả tích lũy ban đầu BC = a1.
+- Bước 3 (Vòng lặp duyệt mảng): Cho chỉ số i chạy từ phần tử thứ 2 (i = 2) đến phần tử cuối cùng (i = N):
+  			Tính ƯSCLN của BC và ai bằng thuật toán chia dư Euclid.
+  			Công thức: BC = ( BC * ai) / UCLN(BC,ai) 
+.Bước 4 (Đầu ra): Sau khi xét hết phần tử thứ N, in giá trị BC ra màn hình và kết thúc.
+
+## 4. Đánh giá độ phức tạp
+- Thời gian: O(n log M).
+- Không gian kể cả mảng: O(n).
+- Bộ nhớ phụ ngoài mảng: O(1).
+
+## 5. Kết luận
+Giải thuật sử dụng thuật toán Euclid để tìm UCLN,
+sau đó tính BCNN lần lượt với từng phần tử.
+
